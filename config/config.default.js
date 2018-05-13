@@ -1,21 +1,39 @@
-'use strict';
+const path = require('path');
+const fs = require('fs');
+module.exports = app => {
+  const exports = {};
 
-module.exports = appInfo => {
-  const config = exports = {};
+  exports.siteFile = {
+    '/favicon.ico': fs.readFileSync(path.join(app.baseDir, 'app/web/asset/images/favicon.ico'))
+  };
 
-  // use for cookie sign key, should change to your own and keep security
-  config.keys = appInfo.name + '_1525522977486_8914';
+  exports.view = {
+    cache: false
+  };
 
-  // add your config here
-  config.middleware = [];
+  exports.vuessr = {
+    layout: path.join(app.baseDir, 'app/web/view/layout.html'),
+    renderOptions: {
+      // 告诉 vue-server-renderer 去 app/view 查找异步 chunk 文件
+      basedir: path.join(app.baseDir, 'app/view')
+    }
+  };
 
-  // listen
-  config.cluster = {
-      listen: {
-          port: 8080,
-          host: 'localhost'
-      }
-  }
+  exports.logger = {
+    consoleLevel: 'DEBUG',
+    dir: path.join(app.baseDir, 'logs')
+  };
 
-  return config;
+  exports.static = {
+    prefix: '/public/',
+    dir: path.join(app.baseDir, 'public')
+  };
+
+  exports.keys = '123456';
+
+  exports.middleware = [
+    'access'
+  ];
+
+  return exports;
 };

@@ -1,0 +1,24 @@
+{
+  "js/chunk/0.72149819.js": "/public/js/chunk/0.72149819.js",
+  "app/app.js": "/public/js/app/app.307ce2c4.js",
+  "app/app.css": "/public/css/app/app.a96152fd.css",
+  "js/vendor.c9e4fd0f.js": "/public/js/vendor.c9e4fd0f.js",
+  "img/loading.gif": "/public/img/loading.0c81ad12.gif",
+  "vendor.js": "/public/js/vendor.c9e4fd0f.js",
+  "deps": {
+    "app/app.js": {
+      "js": [
+        "/public/js/vendor.c9e4fd0f.js",
+        "/public/js/app/app.307ce2c4.js"
+      ],
+      "css": [
+        "/public/css/app/app.a96152fd.css"
+      ]
+    }
+  },
+  "info": {
+    "publicPath": "/public/",
+    "buildPath": "public",
+    "mapped": true
+  }
+}

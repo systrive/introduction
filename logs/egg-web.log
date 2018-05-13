@@ -1,0 +1,210 @@
+2018-05-14 00:39:13,220 INFO 6260 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:39:13,267 INFO 6260 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:39:13,267 INFO 6260 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:39:13,427 INFO 6260 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:39:13,429 INFO 6260 [egg-security] use csrf middleware
+2018-05-14 00:39:13,430 INFO 6260 [egg-security] use methodnoallow middleware
+2018-05-14 00:39:13,430 INFO 6260 [egg-security] use noopen middleware
+2018-05-14 00:39:13,431 INFO 6260 [egg-security] use nosniff middleware
+2018-05-14 00:39:13,431 INFO 6260 [egg-security] use xssProtection middleware
+2018-05-14 00:39:13,431 INFO 6260 [egg-security] use xframe middleware
+2018-05-14 00:39:13,431 INFO 6260 [egg-security] use dta middleware
+2018-05-14 00:39:13,431 INFO 6260 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:39:13,443 INFO 6260 [egg:core] dump config after load, 5ms
+2018-05-14 00:39:13,456 INFO 6260 [egg-watcher:app] watcher start success
+2018-05-14 00:39:13,461 INFO 6260 [egg:core] dump config after ready, 3ms
+2018-05-14 00:39:44,925 INFO 6269 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:39:44,966 INFO 6269 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:39:44,966 INFO 6269 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:39:45,131 INFO 6269 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:39:45,134 INFO 6269 [egg-security] use csrf middleware
+2018-05-14 00:39:45,135 INFO 6269 [egg-security] use methodnoallow middleware
+2018-05-14 00:39:45,136 INFO 6269 [egg-security] use noopen middleware
+2018-05-14 00:39:45,136 INFO 6269 [egg-security] use nosniff middleware
+2018-05-14 00:39:45,136 INFO 6269 [egg-security] use xssProtection middleware
+2018-05-14 00:39:45,137 INFO 6269 [egg-security] use xframe middleware
+2018-05-14 00:39:45,137 INFO 6269 [egg-security] use dta middleware
+2018-05-14 00:39:45,137 INFO 6269 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:39:45,146 INFO 6269 [egg:core] dump config after load, 4ms
+2018-05-14 00:39:45,160 INFO 6269 [egg-watcher:app] watcher start success
+2018-05-14 00:39:45,165 INFO 6269 [egg:core] dump config after ready, 3ms
+2018-05-14 00:40:13,791 INFO 6282 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:40:13,837 INFO 6282 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:40:13,837 INFO 6282 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:40:14,001 INFO 6282 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:40:14,003 INFO 6282 [egg-security] use csrf middleware
+2018-05-14 00:40:14,003 INFO 6282 [egg-security] use methodnoallow middleware
+2018-05-14 00:40:14,003 INFO 6282 [egg-security] use noopen middleware
+2018-05-14 00:40:14,004 INFO 6282 [egg-security] use nosniff middleware
+2018-05-14 00:40:14,004 INFO 6282 [egg-security] use xssProtection middleware
+2018-05-14 00:40:14,004 INFO 6282 [egg-security] use xframe middleware
+2018-05-14 00:40:14,004 INFO 6282 [egg-security] use dta middleware
+2018-05-14 00:40:14,004 INFO 6282 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:40:14,014 INFO 6282 [egg:core] dump config after load, 5ms
+2018-05-14 00:40:14,033 INFO 6282 [egg-watcher:app] watcher start success
+2018-05-14 00:40:14,038 INFO 6282 [egg:core] dump config after ready, 3ms
+2018-05-14 00:40:33,630 INFO 6291 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:40:33,666 INFO 6291 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:40:33,666 INFO 6291 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:40:33,822 INFO 6291 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:40:33,825 INFO 6291 [egg-security] use csrf middleware
+2018-05-14 00:40:33,826 INFO 6291 [egg-security] use methodnoallow middleware
+2018-05-14 00:40:33,827 INFO 6291 [egg-security] use noopen middleware
+2018-05-14 00:40:33,827 INFO 6291 [egg-security] use nosniff middleware
+2018-05-14 00:40:33,827 INFO 6291 [egg-security] use xssProtection middleware
+2018-05-14 00:40:33,828 INFO 6291 [egg-security] use xframe middleware
+2018-05-14 00:40:33,828 INFO 6291 [egg-security] use dta middleware
+2018-05-14 00:40:33,828 INFO 6291 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:40:33,840 INFO 6291 [egg:core] dump config after load, 4ms
+2018-05-14 00:40:33,854 INFO 6291 [egg-watcher:app] watcher start success
+2018-05-14 00:40:33,858 INFO 6291 [egg:core] dump config after ready, 3ms
+2018-05-14 00:46:46,177 INFO 6773 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:46:46,219 INFO 6773 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:46:46,219 INFO 6773 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:46:46,363 INFO 6773 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:46:46,365 INFO 6773 [egg-security] use csrf middleware
+2018-05-14 00:46:46,366 INFO 6773 [egg-security] use methodnoallow middleware
+2018-05-14 00:46:46,366 INFO 6773 [egg-security] use noopen middleware
+2018-05-14 00:46:46,366 INFO 6773 [egg-security] use nosniff middleware
+2018-05-14 00:46:46,366 INFO 6773 [egg-security] use xssProtection middleware
+2018-05-14 00:46:46,367 INFO 6773 [egg-security] use xframe middleware
+2018-05-14 00:46:46,367 INFO 6773 [egg-security] use dta middleware
+2018-05-14 00:46:46,367 INFO 6773 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:46:46,377 INFO 6773 [egg:core] dump config after load, 5ms
+2018-05-14 00:46:46,390 INFO 6773 [egg-watcher:app] watcher start success
+2018-05-14 00:46:46,394 INFO 6773 [egg:core] dump config after ready, 3ms
+2018-05-14 00:47:58,937 INFO 6795 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:47:58,971 INFO 6795 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:47:58,971 INFO 6795 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:47:59,111 INFO 6795 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:47:59,113 INFO 6795 [egg-security] use csrf middleware
+2018-05-14 00:47:59,113 INFO 6795 [egg-security] use methodnoallow middleware
+2018-05-14 00:47:59,113 INFO 6795 [egg-security] use noopen middleware
+2018-05-14 00:47:59,114 INFO 6795 [egg-security] use nosniff middleware
+2018-05-14 00:47:59,114 INFO 6795 [egg-security] use xssProtection middleware
+2018-05-14 00:47:59,114 INFO 6795 [egg-security] use xframe middleware
+2018-05-14 00:47:59,114 INFO 6795 [egg-security] use dta middleware
+2018-05-14 00:47:59,114 INFO 6795 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:47:59,124 INFO 6795 [egg:core] dump config after load, 4ms
+2018-05-14 00:47:59,137 INFO 6795 [egg-watcher:app] watcher start success
+2018-05-14 00:47:59,142 INFO 6795 [egg:core] dump config after ready, 3ms
+2018-05-14 00:50:47,613 INFO 6970 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,682 INFO 6970 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,683 INFO 6970 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,759 INFO 6970 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,764 INFO 6970 [egg-security] use csrf middleware
+2018-05-14 00:50:47,765 INFO 6970 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,766 INFO 6970 [egg-security] use noopen middleware
+2018-05-14 00:50:47,767 INFO 6970 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,771 INFO 6970 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,771 INFO 6970 [egg-security] use xframe middleware
+2018-05-14 00:50:47,772 INFO 6970 [egg-security] use dta middleware
+2018-05-14 00:50:47,772 INFO 6970 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,803 INFO 6970 [egg:core] dump config after load, 20ms
+2018-05-14 00:50:47,839 INFO 6970 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,846 INFO 6970 [egg:core] dump config after ready, 5ms
+2018-05-14 00:50:47,625 INFO 6968 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,709 INFO 6968 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,709 INFO 6968 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,792 INFO 6968 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,798 INFO 6968 [egg-security] use csrf middleware
+2018-05-14 00:50:47,805 INFO 6968 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,806 INFO 6968 [egg-security] use noopen middleware
+2018-05-14 00:50:47,807 INFO 6968 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,808 INFO 6968 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,809 INFO 6968 [egg-security] use xframe middleware
+2018-05-14 00:50:47,810 INFO 6968 [egg-security] use dta middleware
+2018-05-14 00:50:47,810 INFO 6968 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,852 INFO 6968 [egg:core] dump config after load, 27ms
+2018-05-14 00:50:47,882 INFO 6968 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,894 INFO 6968 [egg:core] dump config after ready, 5ms
+2018-05-14 00:50:47,619 INFO 6964 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,753 INFO 6964 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,754 INFO 6964 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,845 INFO 6964 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,857 INFO 6964 [egg-security] use csrf middleware
+2018-05-14 00:50:47,858 INFO 6964 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,859 INFO 6964 [egg-security] use noopen middleware
+2018-05-14 00:50:47,860 INFO 6964 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,861 INFO 6964 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,861 INFO 6964 [egg-security] use xframe middleware
+2018-05-14 00:50:47,862 INFO 6964 [egg-security] use dta middleware
+2018-05-14 00:50:47,862 INFO 6964 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,888 INFO 6964 [egg:core] dump config after load, 17ms
+2018-05-14 00:50:47,915 INFO 6964 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,922 INFO 6964 [egg:core] dump config after ready, 4ms
+2018-05-14 00:50:47,631 INFO 6966 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,714 INFO 6966 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,714 INFO 6966 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,808 INFO 6966 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,815 INFO 6966 [egg-security] use csrf middleware
+2018-05-14 00:50:47,816 INFO 6966 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,817 INFO 6966 [egg-security] use noopen middleware
+2018-05-14 00:50:47,817 INFO 6966 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,818 INFO 6966 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,818 INFO 6966 [egg-security] use xframe middleware
+2018-05-14 00:50:47,824 INFO 6966 [egg-security] use dta middleware
+2018-05-14 00:50:47,824 INFO 6966 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,854 INFO 6966 [egg:core] dump config after load, 17ms
+2018-05-14 00:50:47,883 INFO 6966 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,893 INFO 6966 [egg:core] dump config after ready, 7ms
+2018-05-14 00:50:47,628 INFO 6969 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,714 INFO 6969 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,714 INFO 6969 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,814 INFO 6969 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,819 INFO 6969 [egg-security] use csrf middleware
+2018-05-14 00:50:47,821 INFO 6969 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,822 INFO 6969 [egg-security] use noopen middleware
+2018-05-14 00:50:47,823 INFO 6969 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,824 INFO 6969 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,839 INFO 6969 [egg-security] use xframe middleware
+2018-05-14 00:50:47,840 INFO 6969 [egg-security] use dta middleware
+2018-05-14 00:50:47,840 INFO 6969 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,859 INFO 6969 [egg:core] dump config after load, 12ms
+2018-05-14 00:50:47,889 INFO 6969 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,899 INFO 6969 [egg:core] dump config after ready, 5ms
+2018-05-14 00:50:47,637 INFO 6967 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,729 INFO 6967 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,730 INFO 6967 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,850 INFO 6967 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,855 INFO 6967 [egg-security] use csrf middleware
+2018-05-14 00:50:47,857 INFO 6967 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,858 INFO 6967 [egg-security] use noopen middleware
+2018-05-14 00:50:47,859 INFO 6967 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,859 INFO 6967 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,860 INFO 6967 [egg-security] use xframe middleware
+2018-05-14 00:50:47,861 INFO 6967 [egg-security] use dta middleware
+2018-05-14 00:50:47,861 INFO 6967 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,890 INFO 6967 [egg:core] dump config after load, 10ms
+2018-05-14 00:50:47,917 INFO 6967 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,924 INFO 6967 [egg:core] dump config after ready, 5ms
+2018-05-14 00:50:47,648 INFO 6965 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,723 INFO 6965 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,723 INFO 6965 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,835 INFO 6965 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,839 INFO 6965 [egg-security] use csrf middleware
+2018-05-14 00:50:47,840 INFO 6965 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,841 INFO 6965 [egg-security] use noopen middleware
+2018-05-14 00:50:47,842 INFO 6965 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,842 INFO 6965 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,843 INFO 6965 [egg-security] use xframe middleware
+2018-05-14 00:50:47,844 INFO 6965 [egg-security] use dta middleware
+2018-05-14 00:50:47,844 INFO 6965 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,863 INFO 6965 [egg:core] dump config after load, 12ms
+2018-05-14 00:50:47,901 INFO 6965 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,913 INFO 6965 [egg:core] dump config after ready, 6ms
+2018-05-14 00:50:47,662 INFO 6971 [egg:logger] init all loggers with options: {"dir":"/Users/systrive/Desktop/systrive/introduction/logs","encoding":"utf8","env":"prod","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":true,"outputJSON":false,"buffer":true,"appLogName":"introduction-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":true,"type":"application"}
+2018-05-14 00:50:47,744 INFO 6971 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-05-14 00:50:47,744 INFO 6971 [egg-schedule]: register schedule /Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-05-14 00:50:47,859 INFO 6971 [egg-static] starting static serve /public/ -> /Users/systrive/Desktop/systrive/introduction/public
+2018-05-14 00:50:47,864 INFO 6971 [egg-security] use csrf middleware
+2018-05-14 00:50:47,871 INFO 6971 [egg-security] use methodnoallow middleware
+2018-05-14 00:50:47,874 INFO 6971 [egg-security] use noopen middleware
+2018-05-14 00:50:47,875 INFO 6971 [egg-security] use nosniff middleware
+2018-05-14 00:50:47,876 INFO 6971 [egg-security] use xssProtection middleware
+2018-05-14 00:50:47,877 INFO 6971 [egg-security] use xframe middleware
+2018-05-14 00:50:47,878 INFO 6971 [egg-security] use dta middleware
+2018-05-14 00:50:47,878 INFO 6971 [egg-security] compose 7 middlewares into one security middleware
+2018-05-14 00:50:47,896 INFO 6971 [egg:core] dump config after load, 10ms
+2018-05-14 00:50:47,917 INFO 6971 [egg-watcher:app] watcher start success
+2018-05-14 00:50:47,924 INFO 6971 [egg:core] dump config after ready, 4ms
