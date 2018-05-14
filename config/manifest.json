@@ -1,6 +1,6 @@
 {
-  "js/chunk/0.72d22dcf.js": "/public/js/chunk/0.72d22dcf.js",
-  "app/app.js": "/public/js/app/app.a5c0e9bc.js",
+  "js/chunk/0.72149819.js": "/public/js/chunk/0.72149819.js",
+  "app/app.js": "/public/js/app/app.d65a8ede.js",
   "app/app.css": "/public/css/app/app.a96152fd.css",
   "js/vendor.c9e4fd0f.js": "/public/js/vendor.c9e4fd0f.js",
   "img/loading.gif": "/public/img/loading.0c81ad12.gif",
@@ -9,7 +9,7 @@
     "app/app.js": {
       "js": [
         "/public/js/vendor.c9e4fd0f.js",
-        "/public/js/app/app.a5c0e9bc.js"
+        "/public/js/app/app.d65a8ede.js"
       ],
       "css": [
         "/public/css/app/app.a96152fd.css"

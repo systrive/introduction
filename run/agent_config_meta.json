@@ -179,6 +179,7 @@
     "version": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
     "description": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
     "scripts": {
+      "clean": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "debug": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "build": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "build:dev": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
@@ -186,6 +187,8 @@
       "build:prod": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "dev": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "start": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
+      "start:test": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
+      "start:prod": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "lint": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "fix": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
       "ii": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js"
