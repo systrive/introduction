@@ -10,7 +10,7 @@
     "build:test": "cross-env easy clean && easy build test",
     "build:prod": "cross-env easy clean && easy build prod",
     "dev": "cross-env WORKERS=1 node index.js",
-    "start": "cross-env EGG_SERVER_ENV=prod NODE_ENV=production node index.js",
+    "start": "cross-env EGG_SERVER_ENV=prod NODE_ENV=production pm2 start index.js",
     "start:test": "cross-env EGG_SERVER_ENV=test node index.js",
     "start:prod": "cross-env EGG_SERVER_ENV=prod NODE_ENV=production npm start",
     "lint": "eslint .",
