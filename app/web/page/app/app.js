@@ -4,6 +4,7 @@ import router from 'component/app/router';
 import app from './app.vue';
 import App from 'app';
 import Layout from 'component/layout/app';
+import 'iview/dist/styles/iview.css';
 
 App.component(Layout.name, Layout);
 

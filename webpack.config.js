@@ -13,7 +13,19 @@ module.exports = {
     vue: 'vue/dist/vue.esm.js',
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
-  loaders: {},
+  loaders: {
+    iViewLoader: {
+      test: /iview\/.*?vue$/,
+      use: [
+        'iview-loader',
+        'vue-loader'
+      ]
+    },
+    iview: {
+      test: /iview\/.*?js$/,
+      loader: 'babel-loader'
+    }
+  },
   plugins: {},
   done() {
 

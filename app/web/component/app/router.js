@@ -3,6 +3,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import ListView from './list';
+import Home from './home';
 
 Vue.use(VueRouter);
 
@@ -12,7 +13,7 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: ListView
+      component: Home
     },
     {
       path: '/list',
