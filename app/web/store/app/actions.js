@@ -7,7 +7,7 @@ import axios from 'axios';
 
 Vue.use(Vuex);
 
-const host = 'http://127.0.0.1:7001';
+const host = 'http://47.75.88.141:7001';
 
 const actions = {
 
