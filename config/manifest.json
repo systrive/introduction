@@ -1,23 +1,21 @@
 {
-  "js/chunk/0.9552b179.js": "/public/js/chunk/0.9552b179.js",
-  "app/app.js": "/public/js/app/app.4581b7f7.js",
-  "app/app.css": "/public/css/app/app.5187dfb2.css",
-  "img/ionicons.svg?v=2.0.0": "/public/img/ionicons.621bd386.svg",
-  "font/ionicons.ttf?v=2.0.0": "/public/font/ionicons.24712f6c.ttf",
-  "font/ionicons.woff?v=2.0.0": "/public/font/ionicons.05acfdb5.woff",
-  "font/ionicons.eot?v=2.0.0": "/public/font/ionicons.2c2ae068.eot",
-  "js/vendor.c9e4fd0f.js": "/public/js/vendor.c9e4fd0f.js",
-  "img/loading.gif": "/public/img/loading.0c81ad12.gif",
-  "vendor.js": "/public/js/vendor.c9e4fd0f.js",
+  "app/app.js": "/public/js/app/app.js",
+  "js/chunk/0.js": "/public/js/chunk/0.js",
+  "js/chunk/1.js": "/public/js/chunk/1.js",
+  "js/chunk/2.js": "/public/js/chunk/2.js",
+  "font/ionicons.eot?v=2.0.0": "/public/font/ionicons.eot",
+  "img/ionicons.svg?v=2.0.0": "/public/img/ionicons.svg",
+  "font/ionicons.ttf?v=2.0.0": "/public/font/ionicons.ttf",
+  "font/ionicons.woff?v=2.0.0": "/public/font/ionicons.woff",
+  "js/vendor.js": "/public/js/vendor.js",
+  "vendor.js": "/public/js/vendor.js",
   "deps": {
     "app/app.js": {
       "js": [
-        "/public/js/vendor.c9e4fd0f.js",
-        "/public/js/app/app.4581b7f7.js"
+        "/public/js/vendor.js",
+        "/public/js/app/app.js"
       ],
-      "css": [
-        "/public/css/app/app.5187dfb2.css"
-      ]
+      "css": []
     }
   },
   "info": {

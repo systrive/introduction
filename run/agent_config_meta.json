@@ -3,7 +3,7 @@
     "/favicon.ico": "/Users/systrive/Desktop/systrive/introduction/config/config.default.js"
   },
   "view": {
-    "cache": "/Users/systrive/Desktop/systrive/introduction/config/config.default.js",
+    "cache": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view/config/config.local.js",
     "root": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view/config/config.default.js",
     "defaultExtension": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view/config/config.default.js",
     "defaultViewEngine": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view/config/config.default.js",
@@ -20,7 +20,7 @@
     "manifest": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.default.js",
     "injectHeadRegex": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.default.js",
     "injectBodyRegex": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.default.js",
-    "injectCss": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.default.js",
+    "injectCss": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.local.js",
     "injectJs": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.default.js",
     "crossorigin": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.default.js",
     "injectRes": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr/config/config.default.js",
@@ -44,28 +44,36 @@
     "coreLogName": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
     "agentLogName": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
     "errorLogName": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
-    "coreLogger": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.local.js"
+    },
     "allowDebugAtProd": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js"
   },
   "static": {
     "prefix": "/Users/systrive/Desktop/systrive/introduction/config/config.default.js",
     "dir": "/Users/systrive/Desktop/systrive/introduction/config/config.default.js",
+    "maxAge": "/Users/systrive/Desktop/systrive/introduction/config/config.local.js",
     "dynamic": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static/config/config.default.js",
     "preload": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static/config/config.prod.js",
-    "maxFiles": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static/config/config.default.js",
-    "maxAge": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static/config/config.prod.js"
+    "buffer": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static/config/config.default.js"
   },
   "keys": "/Users/systrive/Desktop/systrive/introduction/config/config.default.js",
   "middleware": "/Users/systrive/Desktop/systrive/introduction/config/config.default.js",
-  "session": {
-    "maxAge": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js"
+  "development": {
+    "watchDirs": "/Users/systrive/Desktop/systrive/introduction/config/config.local.js",
+    "ignoreDirs": "/Users/systrive/Desktop/systrive/introduction/config/config.local.js",
+    "fastReady": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-development/config/config.default.js"
+  },
+  "logview": {
+    "dir": "/Users/systrive/Desktop/systrive/introduction/config/config.local.js",
+    "prefix": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-logview/config/config.default.js",
+    "staticHost": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-logview/config/config.default.js"
   },
   "security": {
-    "domainWhiteList": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js",
+    "domainWhiteList": "/Users/systrive/Desktop/systrive/introduction/config/config.local.js",
     "protocolWhiteList": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js",
     "defaultMiddleware": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js",
     "csrf": {
@@ -83,7 +91,7 @@
       "value": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.local.js",
       "maxAge": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js",
       "includeSubdomains": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js"
     },
@@ -116,6 +124,12 @@
       "checkAddress": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js"
     }
   },
+  "session": {
+    "maxAge": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session/config/config.default.js"
+  },
   "helper": {
     "shtml": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security/config/config.default.js"
   },
@@ -136,7 +150,7 @@
     "cookieMaxAge": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-watcher/config/config.default.js",
+    "type": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
       "default": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-watcher/config/config.default.js",
       "development": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-watcher/config/config.default.js"
@@ -167,6 +181,15 @@
     "maxFiles": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/config/config.default.js",
     "rotateDuration": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/config/config.default.js",
     "maxDays": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "cors": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-cors/config/config.default.js",
+  "webpack": {
+    "port": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-webpack/config/config.default.js",
+    "proxy": {
+      "host": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-webpack/config/config.default.js",
+      "match": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-webpack/config/config.default.js"
+    },
+    "webpackConfigList": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-webpack/config/config.default.js"
   },
   "env": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",
   "name": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/config.default.js",

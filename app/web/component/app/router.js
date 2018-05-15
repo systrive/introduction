@@ -2,9 +2,6 @@ import Vue from 'vue';
 
 import VueRouter from 'vue-router';
 
-import ListView from './list';
-import Home from './home';
-
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -13,14 +10,14 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: Home
+      component: () => import(/* webpackChunkName: home */'./home')
     },
     {
       path: '/list',
-      component: ListView
+      component: () => import('./list')
     },
     {
-      path: '/detail/:id',
+      path: '/detail',
       component: () => import('./detail')
     }
   ]
