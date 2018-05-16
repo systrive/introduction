@@ -37,7 +37,6 @@
 </template>
 <script type="text/babel">
     import { Menu, MenuItem, Icon, Submenu, MenuGroup, Select, Option } from 'iview';
-import { log } from 'util';
     export default{
         data () {
             return {
@@ -74,7 +73,6 @@ import { log } from 'util';
             update () {
                 let activeMenu = this.$route.path
                 this.$nextTick(() => {
-                    console.log(activeMenu)
                     this.$refs.menu.updateActiveName(activeMenu || '/')
                 })
             }

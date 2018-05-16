@@ -1,0 +1,34 @@
+{
+  "app/app.js": "/public/js/app/app.js",
+  "js/chunk/0.js": "/public/js/chunk/0.js",
+  "js/chunk/1.js": "/public/js/chunk/1.js",
+  "js/chunk/2.js": "/public/js/chunk/2.js",
+  "js/chunk/3.js": "/public/js/chunk/3.js",
+  "img/visual-assembly-cover.png": "/public/img/visual-assembly-cover.png",
+  "img/custom-materials-container.png": "/public/img/custom-materials-container.png",
+  "img/overview-back.jpg": "/public/img/overview-back.jpg",
+  "img/overview.png": "/public/img/overview.png",
+  "img/product-feature-cover.png": "/public/img/product-feature-cover.png",
+  "img/visual-assembly-container.png": "/public/img/visual-assembly-container.png",
+  "img/custom-materials-cover.png": "/public/img/custom-materials-cover.png",
+  "js/vendor.js": "/public/js/vendor.js",
+  "font/ionicons.woff?v=2.0.0": "/public/font/ionicons.woff",
+  "font/ionicons.eot?v=2.0.0": "/public/font/ionicons.eot",
+  "img/ionicons.svg?v=2.0.0": "/public/img/ionicons.svg",
+  "font/ionicons.ttf?v=2.0.0": "/public/font/ionicons.ttf",
+  "vendor.js": "/public/js/vendor.js",
+  "deps": {
+    "app/app.js": {
+      "js": [
+        "/public/js/vendor.js",
+        "/public/js/app/app.js"
+      ],
+      "css": []
+    }
+  },
+  "info": {
+    "publicPath": "/public/",
+    "buildPath": "public",
+    "mapped": true
+  }
+}
