@@ -36,7 +36,7 @@
     </header>
 </template>
 <script type="text/babel">
-    import { Button, Table, Menu, MenuItem, Icon, Submenu, MenuGroup, Select, Option } from 'iview';
+    import { Menu, MenuItem, Icon, Submenu, MenuGroup, Select, Option } from 'iview';
 import { log } from 'util';
     export default{
         data () {
@@ -56,8 +56,6 @@ import { log } from 'util';
             }
         },
         components: {
-            Button,
-            Table,
             Menu,
             MenuItem,
             Icon,

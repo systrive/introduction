@@ -3,3 +3,6 @@ node_modules/
 *.log
 .vscode/
 .DS_Store
+public/
+run/
+config/manifest.json
