@@ -1,16 +1,24 @@
 <template>
     <div class="index">
-        <div className="home-page">
+        <div class="home-page">
             <overview></overview>
             <product-feature :feature="productFeature1"></product-feature>
             <visual-assembly></visual-assembly>
             <product-feature :feature="productFeature2"></product-feature>
             <custom-materials></custom-materials>
             <product-feature :feature="productFeature3"></product-feature>
-            <!-- <layout-footer></layout-footer> -->
         </div>
     </div>
 </template>
+<style lang="less">
+    .index {
+        .home-page {
+            background: #fff;
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+</style>
 <script type="text/babel">
 import Overview from './overview'
 import ProductFeature from './product-feature'
@@ -58,9 +66,3 @@ export default {
     }
 };
 </script>
-<style lang="less">
-    .home-page {
-        background: #fff;
-        overflow: hidden;
-    }
-</style>

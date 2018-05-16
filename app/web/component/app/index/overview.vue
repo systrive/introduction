@@ -28,5 +28,93 @@
 </script>
 
 <style lang="less">
-@import './overview.less';
+    .overview {
+        .wrapper-container {
+            margin-bottom: -400px;
+            height: 750px + 400px;
+            position: relative;
+        }
+        .bg-image2 {
+            width: 1400px;
+            height: 782px;
+            border-radius: 782 / 2px;
+            background: linear-gradient(135deg, rgba(94,136,255,1) 0%,rgba(111,48,254,1) 100%);
+            transform: rotate(-45deg);
+            box-shadow: 2px 2px 60px rgba(0,0,0,0.06);
+            position: absolute;
+            left: 35%;
+            bottom: 550px;
+            z-index: 1;
+        }
+        .wrapper {
+            height: 750px;
+            background-color: #f6f6f6;
+            position: relative;
+            width: 100%;
+            margin: 0 200px 0 0;
+        }
+        .bg-image {
+            position: absolute;
+            width: 100%;
+            height: 750px;
+            background-size: cover;
+            background-image: url('./img/overview-back.jpg'),
+        }
+        .bg-image-mask {
+            width: 100%;
+            height: 750px;
+            background: linear-gradient(135deg, rgba(94,136,255,0.85) 0%,rgba(111,48,254,0.85) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+        }
+        .wrapper-body {
+            max-width: 1190px;
+            height: 750px;
+            position: relative;
+            margin: 0 auto;
+            z-index: 2;
+        }
+        .software-intro {
+            position: absolute;
+            left: 5%;
+            padding-top: 230px;
+            z-index: 3;
+        }
+        .title {
+            font-size: 46px;
+            color: #fff;
+            font-weight: 500px;
+            line-height: 66px;
+            text-shadow: 0 0 3px rgba(0,0,0,0.3);
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .slogan {
+            font-size: 24px;
+            color: #fff;
+            line-height: 34px;
+            text-shadow: 0 0 3px rgba(0,0,0,0.3);
+        }
+        .software-detail {
+            padding-top: 24px;
+            display: flex;
+            flex-direction: row;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 300px;
+            width: 200px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .software {
+            background-image: url('./img/overview.png');
+            width: 1446 / 2px;
+            height: 1148 / 2px;
+            background-size: 723px 574px;
+            position: absolute;
+            top: 100px;
+            left: 38%;
+        }
+    }
 </style>

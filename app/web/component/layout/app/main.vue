@@ -4,7 +4,7 @@
      <LayoutContent>
        <div slot="content"><slot name="main"></slot></div>
      </LayoutContent>
-     <!-- <layout-footer></layout-footer> -->
+     <layout-footer></layout-footer>
    </div>
 </template>
 <style>
