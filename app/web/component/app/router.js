@@ -10,7 +10,7 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: () => import(/* webpackChunkName: home */'./home')
+      component: () => import(/* webpackChunkName: home */'./index/index')
     },
     {
       path: '/list',
@@ -19,6 +19,10 @@ const router = new VueRouter({
     {
       path: '/detail',
       component: () => import('./detail')
+    },
+    {
+      path: '/strategy',
+      component: () => import('./strategy/strategy')
     }
   ]
 });

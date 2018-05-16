@@ -3,17 +3,30 @@
     top: 0;
     left: 0;
     z-index: 100;
-    margin-left: 200px;
+    margin-left: 150px;
     font-size: 40px;
+    &.ivu-menu-item-active,
+    &.ivu-menu-item:hover {
+        border: none;
+    }
 }
 
 .menu {
     float: right;
     margin-right: 100px;
+    a, a:hover {
+        text-decoration: none;
+    }
 }
 
 // 样式修改
 .ivu-menu-horizontal {
-    height: 100px !important;
-    line-height: 100px !important;
+    height: 80px !important;
+    line-height: 80px !important;
+}
+
+@media screen and (max-device-width:960px) {
+    .logo {
+        margin-left: 100px;
+    }
 }

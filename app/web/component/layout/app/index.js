@@ -10,13 +10,13 @@ export default {
   },
   computed: {
     vTitle() {
-      return this.$root.title || this.title || 'Egg + Vue';
+      return this.$root.title || this.title || '网站名称';
     },
     vKeywords() {
-      return this.$root.keywords || this.keywords || 'egg, vue, webpack, server side render';
+      return this.$root.keywords || this.keywords || '关键词';
     },
     vDescription() {
-      return this.$root.description || this.description || 'egg-vue-webpack server side render';
+      return this.$root.description || this.description || '描述';
     },
     baseClass() {
       return this.$root.baseClass;
