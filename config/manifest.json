@@ -1,9 +1,9 @@
 {
-  "js/chunk/0.1fd8032f.js": "/public/js/chunk/0.1fd8032f.js",
+  "js/chunk/0.cb913a2d.js": "/public/js/chunk/0.cb913a2d.js",
   "js/chunk/1.f0d5bfce.js": "/public/js/chunk/1.f0d5bfce.js",
-  "js/chunk/2.281de421.js": "/public/js/chunk/2.281de421.js",
-  "js/chunk/3.d6e64ce4.js": "/public/js/chunk/3.d6e64ce4.js",
-  "app/app.js": "/public/js/app/app.08b73294.js",
+  "js/chunk/2.2ba3adb6.js": "/public/js/chunk/2.2ba3adb6.js",
+  "js/chunk/3.3075433d.js": "/public/js/chunk/3.3075433d.js",
+  "app/app.js": "/public/js/app/app.81a0ebfa.js",
   "app/app.css": "/public/css/app/app.779f0085.css",
   "img/visual-assembly-container.png": "/public/img/visual-assembly-container.9de4306f.png",
   "js/vendor.c9e4fd0f.js": "/public/js/vendor.c9e4fd0f.js",
@@ -16,13 +16,14 @@
   "img/overview.png": "/public/img/overview.a11c9a59.png",
   "img/ionicons.svg?v=2.0.0": "/public/img/ionicons.621bd386.svg",
   "img/product-feature-cover.png": "/public/img/product-feature-cover.dd0edf38.png",
+  "img/detection-1.png": "/public/img/detection-1.ecd3373a.png",
   "img/visual-assembly-cover.png": "/public/img/visual-assembly-cover.52ab03e7.png",
   "vendor.js": "/public/js/vendor.c9e4fd0f.js",
   "deps": {
     "app/app.js": {
       "js": [
         "/public/js/vendor.c9e4fd0f.js",
-        "/public/js/app/app.08b73294.js"
+        "/public/js/app/app.81a0ebfa.js"
       ],
       "css": [
         "/public/css/app/app.779f0085.css"

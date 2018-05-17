@@ -14,7 +14,7 @@ const router = new VueRouter({
     },
     {
       path: '/list',
-      component: () => import('./list')
+      component: () => import('./list/list')
     },
     {
       path: '/detail',

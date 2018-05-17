@@ -44,7 +44,7 @@
     padding-top: 160px;
     padding-bottom: 160px;
     padding-left: 30px;
-    background-image: url(https://img.alicdn.com/tfs/TB1fFH5pAyWBuNjy0FpXXassXXa-66-66.png);
+    background-image: url('./img/product-feature-background.png');
     background-repeat: no-repeat;
     background-position: 10px 120px;
 }

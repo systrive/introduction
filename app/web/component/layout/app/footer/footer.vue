@@ -4,7 +4,7 @@
             <div class="copyright">
                 © 2018 Theme designed by boowin
                 <a
-                  href="https://github.com/alibaba/ice"
+                  href="#"
                   target="_blank"
                   class="copyright-link"
                   rel="noopener noreferrer"
