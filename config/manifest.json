@@ -1,33 +1,111 @@
 {
-  "js/chunk/0.cb913a2d.js": "/public/js/chunk/0.cb913a2d.js",
-  "js/chunk/1.f0d5bfce.js": "/public/js/chunk/1.f0d5bfce.js",
-  "js/chunk/2.2ba3adb6.js": "/public/js/chunk/2.2ba3adb6.js",
-  "js/chunk/3.3075433d.js": "/public/js/chunk/3.3075433d.js",
-  "app/app.js": "/public/js/app/app.81a0ebfa.js",
-  "app/app.css": "/public/css/app/app.779f0085.css",
-  "img/visual-assembly-container.png": "/public/img/visual-assembly-container.9de4306f.png",
-  "js/vendor.c9e4fd0f.js": "/public/js/vendor.c9e4fd0f.js",
-  "font/ionicons.ttf?v=2.0.0": "/public/font/ionicons.24712f6c.ttf",
-  "font/ionicons.woff?v=2.0.0": "/public/font/ionicons.05acfdb5.woff",
-  "font/ionicons.eot?v=2.0.0": "/public/font/ionicons.2c2ae068.eot",
-  "img/overview-back.jpg": "/public/img/overview-back.a832932c.jpg",
-  "img/custom-materials-container.png": "/public/img/custom-materials-container.8932b523.png",
-  "img/custom-materials-cover.png": "/public/img/custom-materials-cover.b235a0c5.png",
-  "img/overview.png": "/public/img/overview.a11c9a59.png",
-  "img/ionicons.svg?v=2.0.0": "/public/img/ionicons.621bd386.svg",
-  "img/product-feature-cover.png": "/public/img/product-feature-cover.dd0edf38.png",
-  "img/detection-1.png": "/public/img/detection-1.ecd3373a.png",
-  "img/visual-assembly-cover.png": "/public/img/visual-assembly-cover.52ab03e7.png",
-  "vendor.js": "/public/js/vendor.c9e4fd0f.js",
+  "layout.js": "/public/js/layout.b2243dd6.js",
+  "spa/ssr.js": "/public/js/spa/ssr.0d9e95d4.js",
+  "spa/ssr.css": "/public/css/spa/ssr.c661e3eb.css",
+  "spa/redux.js": "/public/js/spa/redux.35a3fa2f.js",
+  "spa/redux.css": "/public/css/spa/redux.c661e3eb.css",
+  "spa/client.js": "/public/js/spa/client.98cd5d1f.js",
+  "spa/client.css": "/public/css/spa/client.18958aec.css",
+  "home/home.js": "/public/js/home/home.8f970999.js",
+  "home/home.css": "/public/css/home/home.e8004855.css",
+  "hello/element.js": "/public/js/hello/element.1264f9d7.js",
+  "hello/element.css": "/public/css/hello/element.18958aec.css",
+  "hello/component.js": "/public/js/hello/component.41a965c5.js",
+  "hello/component.css": "/public/css/hello/component.18958aec.css",
+  "css/module/module.js": "/public/js/css/module/module.b2ec9aa1.js",
+  "css/module/module.css": "/public/css/css/module/module.b0687cea.css",
+  "ant/tab/tab.js": "/public/js/ant/tab/tab.fb25d96a.js",
+  "ant/tab/tab.css": "/public/css/ant/tab/tab.1f9f8cbc.css",
+  "js/vendor.4cc09fed.js": "/public/js/vendor.4cc09fed.js",
+  "img/market-survey.png": "/public/img/market-survey.12856f48.png",
+  "img/about-us.png": "/public/img/about-us.ad0fa481.png",
+  "img/corporation-mediating.png": "/public/img/corporation-mediating.34bf5a54.png",
+  "img/logo.png": "/public/img/logo.50e4f851.png",
+  "img/loading.gif": "/public/img/loading.0c81ad12.gif",
+  "img/strategy-consulting.png": "/public/img/strategy-consulting.299b6cf3.png",
+  "img/overview.png": "/public/img/overview.e49aea2f.png",
+  "img/business-agency.png": "/public/img/business-agency.f206bfd6.png",
+  "img/industry.png": "/public/img/industry.1e6713ae.png",
+  "vendor.js": "/public/js/vendor.4cc09fed.js",
   "deps": {
-    "app/app.js": {
+    "ant/tab/tab.js": {
       "js": [
-        "/public/js/vendor.c9e4fd0f.js",
-        "/public/js/app/app.81a0ebfa.js"
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/ant/tab/tab.fb25d96a.js"
       ],
       "css": [
-        "/public/css/app/app.779f0085.css"
+        "/public/css/ant/tab/tab.1f9f8cbc.css"
       ]
+    },
+    "css/module/module.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/css/module/module.b2ec9aa1.js"
+      ],
+      "css": [
+        "/public/css/css/module/module.b0687cea.css"
+      ]
+    },
+    "hello/component.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/hello/component.41a965c5.js"
+      ],
+      "css": [
+        "/public/css/hello/component.18958aec.css"
+      ]
+    },
+    "hello/element.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/hello/element.1264f9d7.js"
+      ],
+      "css": [
+        "/public/css/hello/element.18958aec.css"
+      ]
+    },
+    "home/home.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/home/home.8f970999.js"
+      ],
+      "css": [
+        "/public/css/home/home.e8004855.css"
+      ]
+    },
+    "spa/client.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/spa/client.98cd5d1f.js"
+      ],
+      "css": [
+        "/public/css/spa/client.18958aec.css"
+      ]
+    },
+    "spa/redux.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/spa/redux.35a3fa2f.js"
+      ],
+      "css": [
+        "/public/css/spa/redux.c661e3eb.css"
+      ]
+    },
+    "spa/ssr.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/spa/ssr.0d9e95d4.js"
+      ],
+      "css": [
+        "/public/css/spa/ssr.c661e3eb.css"
+      ]
+    },
+    "layout.js": {
+      "js": [
+        "/public/js/vendor.4cc09fed.js",
+        "/public/js/layout.b2243dd6.js"
+      ],
+      "css": []
     }
   },
   "info": {

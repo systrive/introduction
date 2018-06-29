@@ -7,7 +7,17 @@
       "encrypt": true
     },
     "security": {
-      "domainWhiteList": [],
+      "domainWhiteList": [
+        "http://localhost:9000",
+        "http://127.0.0.1:9000",
+        "http://192.168.1.25:9000",
+        "http://localhost:9001",
+        "http://127.0.0.1:9001",
+        "http://192.168.1.25:9001",
+        "http://localhost:9002",
+        "http://127.0.0.1:9002",
+        "http://192.168.1.25:9002"
+      ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
@@ -71,7 +81,8 @@
     },
     "onerror": {
       "errorPageUrl": "",
-      "appErrorFilter": null
+      "appErrorFilter": null,
+      "templatePath": "/Users/systrive/code/introduction/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -81,10 +92,10 @@
       "cookieMaxAge": "1y"
     },
     "watcher": {
-      "type": "default",
+      "type": "development",
       "eventSources": {
-        "default": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/systrive/code/introduction/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/systrive/code/introduction/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "multipart": {
@@ -98,10 +109,23 @@
       "fileExtensions": [],
       "whitelist": null
     },
+    "development": {
+      "watchDirs": [
+        "build"
+      ],
+      "ignoreDirs": [
+        "app/web",
+        "public",
+        "config"
+      ],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
-        "file": "/Users/systrive/logs/introduction/egg-schedule.log"
+        "file": "/Users/systrive/code/introduction/logs/introduction/egg-schedule.log"
       }
     },
     "logrotator": {
@@ -115,26 +139,27 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/systrive/Desktop/systrive/introduction/public",
+      "dir": "/Users/systrive/code/introduction/public",
       "dynamic": true,
       "preload": false,
-      "buffer": true,
+      "buffer": false,
       "maxFiles": 1000,
-      "maxAge": 31536000
+      "maxAge": 0
     },
     "view": {
-      "root": "/Users/systrive/Desktop/systrive/introduction/app/view",
+      "root": "/Users/systrive/code/introduction/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {
-        ".js": "vue"
+        ".js": "react",
+        ".jsx": "react"
       }
     },
-    "vuessr": {
+    "reactssr": {
       "doctype": "<!doctype html>",
-      "layout": "/Users/systrive/Desktop/systrive/introduction/app/web/view/layout.html",
-      "manifest": "/Users/systrive/Desktop/systrive/introduction/config/manifest.json",
+      "layout": "/Users/systrive/code/introduction/app/view/layout.js",
+      "manifest": "/Users/systrive/code/introduction/config/manifest.json",
       "injectHeadRegex": "/(<\\/head>)/i",
       "injectBodyRegex": "/(<\\/body>)/i",
       "injectCss": true,
@@ -142,16 +167,776 @@
       "crossorigin": false,
       "injectRes": [],
       "fallbackToClient": true,
-      "cache": {
-        "max": 1000,
-        "maxAge": 604800000
-      },
-      "afterRender": "<Function afterRender>",
-      "renderOptions": {
-        "basedir": "/Users/systrive/Desktop/systrive/introduction/app/view"
-      }
+      "afterRender": "<Function afterRender>"
     },
-    "env": "prod",
+    "cors": {},
+    "webpack": {
+      "port": 9000,
+      "proxy": {
+        "host": "http://127.0.0.1:9000",
+        "match": "/^\\/public\\//"
+      },
+      "webpackConfigList": [
+        {
+          "context": "/Users/systrive/code/introduction",
+          "entry": {
+            "ant/tab/tab": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/client-loader.js!/Users/systrive/code/introduction/app/web/page/ant/tab/tab.jsx"
+            ],
+            "css/module/module": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/client-loader.js!/Users/systrive/code/introduction/app/web/page/css/module/module.jsx"
+            ],
+            "hello/component": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/client-loader.js!/Users/systrive/code/introduction/app/web/page/hello/component.jsx"
+            ],
+            "hello/element": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/client-loader.js!/Users/systrive/code/introduction/app/web/page/hello/element.jsx"
+            ],
+            "home/home": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/client-loader.js!/Users/systrive/code/introduction/app/web/page/home/home.jsx"
+            ],
+            "spa/client": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "/Users/systrive/code/introduction/app/web/page/spa/client.jsx"
+            ],
+            "spa/redux": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "/Users/systrive/code/introduction/app/web/page/spa/redux.jsx"
+            ],
+            "spa/ssr": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "/Users/systrive/code/introduction/app/web/page/spa/ssr.jsx"
+            ],
+            "layout": [
+              "react-hot-loader/patch",
+              "/Users/systrive/code/introduction/node_modules/webpack-hot-middleware/client?path=http://192.168.1.25:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/utils/hot.js",
+              "/Users/systrive/code/introduction/app/web/framework/layout/layout.jsx"
+            ]
+          },
+          "output": {
+            "filename": "js/[name].js",
+            "chunkFilename": "js/chunk/[name].js",
+            "path": "/Users/systrive/code/introduction/public",
+            "publicPath": "/public/"
+          },
+          "resolve": {
+            "extensions": [
+              ".js",
+              ".jsx"
+            ],
+            "alias": {
+              "asset": "/Users/systrive/code/introduction/app/web/asset",
+              "component": "/Users/systrive/code/introduction/app/web/component",
+              "framework": "/Users/systrive/code/introduction/app/web/framework",
+              "store": "/Users/systrive/code/introduction/app/web/store"
+            }
+          },
+          "externals": [],
+          "resolveLoader": {
+            "modules": [
+              "/Users/systrive/code/introduction/node_modules",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/node_modules",
+              "/Users/systrive/code/introduction/node_modules/easywebpack-react/node_modules"
+            ]
+          },
+          "mode": "development",
+          "target": "web",
+          "optimization": {
+            "minimize": false
+          },
+          "module": {
+            "rules": [
+              {
+                "test": {},
+                "exclude": {},
+                "use": [
+                  {
+                    "loader": "babel-loader",
+                    "options": {}
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "eslint-loader",
+                    "options": {}
+                  }
+                ],
+                "exclude": {},
+                "enforce": "pre"
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "/Users/systrive/code/introduction/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                    "options": {
+                      "omit": 1,
+                      "remove": true
+                    }
+                  },
+                  {
+                    "loader": "style-loader"
+                  },
+                  {
+                    "options": {},
+                    "loader": "css-loader"
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  }
+                ],
+                "exclude": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "/Users/systrive/code/introduction/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                    "options": {
+                      "omit": 1,
+                      "remove": true
+                    }
+                  },
+                  {
+                    "loader": "style-loader"
+                  },
+                  {
+                    "options": {},
+                    "loader": "css-loader"
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  },
+                  {
+                    "options": {},
+                    "loader": "less-loader"
+                  }
+                ],
+                "exclude": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "url-loader",
+                    "options": {
+                      "limit": 1024,
+                      "name": "img/[name].[ext]"
+                    }
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "url-loader",
+                    "options": {
+                      "limit": 1024,
+                      "name": "media/[name].[ext]"
+                    }
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "url-loader",
+                    "options": {
+                      "limit": 1024,
+                      "name": "font/[name].[ext]"
+                    }
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "/Users/systrive/code/introduction/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                    "options": {
+                      "omit": 1,
+                      "remove": true
+                    }
+                  },
+                  {
+                    "loader": "style-loader"
+                  },
+                  {
+                    "options": {
+                      "modules": true,
+                      "importLoaders": 1
+                    },
+                    "loader": "css-loader"
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  }
+                ],
+                "include": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "/Users/systrive/code/introduction/node_modules/extract-text-webpack-plugin/dist/loader.js",
+                    "options": {
+                      "omit": 1,
+                      "remove": true
+                    }
+                  },
+                  {
+                    "loader": "style-loader"
+                  },
+                  {
+                    "options": {
+                      "modules": true,
+                      "importLoaders": 2
+                    },
+                    "loader": "css-loader"
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  },
+                  {
+                    "options": {},
+                    "loader": "less-loader"
+                  }
+                ],
+                "include": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              }
+            ]
+          },
+          "plugins": [
+            {
+              "options": {},
+              "fullBuildTimeout": 200,
+              "requestTimeout": 10000,
+              "__plugin__": "HotModuleReplacementPlugin",
+              "__lable__": "hot"
+            },
+            {
+              "definitions": {},
+              "__plugin__": "ProvidePlugin",
+              "__lable__": "provide"
+            },
+            {
+              "definitions": {
+                "process.env.NODE_ENV": "\"development\"",
+                "EASY_ENV": "\"dev\"",
+                "EASY_ENV_IS_DEV": true,
+                "EASY_ENV_IS_TEST": false,
+                "EASY_ENV_IS_PROD": false,
+                "EASY_ENV_IS_BROWSER": true,
+                "EASY_ENV_IS_NODE": false,
+                "EASY_ENV_LOCAL_PUBLIC_PATH": "\"/public/\"",
+                "EASY_ENV_PUBLIC_PATH": "\"/public/\"",
+                "EASY_ENV_HOST_URL": "\"http://192.168.1.25:9000\""
+              },
+              "__plugin__": "DefinePlugin",
+              "__lable__": "define"
+            },
+            {
+              "opts": {
+                "basePath": "",
+                "absPath": "",
+                "fileName": "../config/manifest.json",
+                "commonsChunk": [
+                  "runtime",
+                  "common"
+                ],
+                "transformExtensions": {},
+                "asset": true,
+                "writeToFileEmit": true,
+                "seed": null,
+                "filter": null,
+                "map": null,
+                "generate": null,
+                "sort": null,
+                "baseDir": "/Users/systrive/code/introduction",
+                "host": "http://192.168.1.25:9000",
+                "proxy": true,
+                "buildPath": "/Users/systrive/code/introduction/public",
+                "publicPath": "/public/",
+                "localPublicPath": "/public/",
+                "assets": false,
+                "dllDir": "/var/folders/3p/xj48b7mj50jcgzz_qsjsvsj80000gn/T/easywebpack/introduction/dev/dll",
+                "filepath": "/Users/systrive/code/introduction/config/manifest.json",
+                "dllConfig": [
+                  {
+                    "name": "vendor",
+                    "lib": [
+                      "react",
+                      "react-dom"
+                    ]
+                  }
+                ],
+                "dllChunk": {
+                  "names": [
+                    "vendor"
+                  ],
+                  "chunks": [
+                    {
+                      "id": "vendor.js",
+                      "name": "vendor",
+                      "outputName": "js/vendor.js",
+                      "outputPath": "/public/js/vendor.js",
+                      "filepath": "/var/folders/3p/xj48b7mj50jcgzz_qsjsvsj80000gn/T/easywebpack/introduction/dev/dll/file/js/vendor.js"
+                    }
+                  ],
+                  "dll": [
+                    {
+                      "name": "vendor",
+                      "lib": [
+                        "react",
+                        "react-dom"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "__plugin__": "webpack-manifest-resource-plugin",
+              "__lable__": "manifest"
+            },
+            {
+              "__plugin__": "progress-bar-webpack-plugin",
+              "__lable__": "progress"
+            },
+            {
+              "filename": "css/[name].css",
+              "id": 2,
+              "options": {
+                "allChunks": true
+              },
+              "__plugin__": "extract-text-webpack-plugin",
+              "__lable__": "extract"
+            },
+            {
+              "opts": {
+                "assets": [
+                  {
+                    "id": "vendor.js",
+                    "name": "vendor",
+                    "outputName": "js/vendor.js",
+                    "outputPath": "/public/js/vendor.js",
+                    "filepath": "/var/folders/3p/xj48b7mj50jcgzz_qsjsvsj80000gn/T/easywebpack/introduction/dev/dll/file/js/vendor.js"
+                  }
+                ]
+              },
+              "__plugin__": "AssetFileWebpackPlugin",
+              "__lable__": "dllAsset"
+            },
+            {
+              "options": {
+                "context": "/Users/systrive/code/introduction",
+                "manifest": {
+                  "name": "vendor",
+                  "content": {
+                    "./node_modules/fbjs/lib/shallowEqual.js": {
+                      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/react-dom/index.js": {
+                      "id": "./node_modules/react-dom/index.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/react-dom/cjs/react-dom.development.js": {
+                      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/invariant.js": {
+                      "id": "./node_modules/fbjs/lib/invariant.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/warning.js": {
+                      "id": "./node_modules/fbjs/lib/warning.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/ExecutionEnvironment.js": {
+                      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/object-assign/index.js": {
+                      "id": "./node_modules/object-assign/index.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/emptyFunction.js": {
+                      "id": "./node_modules/fbjs/lib/emptyFunction.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/prop-types/checkPropTypes.js": {
+                      "id": "./node_modules/prop-types/checkPropTypes.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/getActiveElement.js": {
+                      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/react/index.js": {
+                      "id": "./node_modules/react/index.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/containsNode.js": {
+                      "id": "./node_modules/fbjs/lib/containsNode.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/emptyObject.js": {
+                      "id": "./node_modules/fbjs/lib/emptyObject.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/hyphenateStyleName.js": {
+                      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/camelizeStyleName.js": {
+                      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/camelize.js": {
+                      "id": "./node_modules/fbjs/lib/camelize.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/hyphenate.js": {
+                      "id": "./node_modules/fbjs/lib/hyphenate.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/isTextNode.js": {
+                      "id": "./node_modules/fbjs/lib/isTextNode.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/fbjs/lib/isNode.js": {
+                      "id": "./node_modules/fbjs/lib/isNode.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/prop-types/lib/ReactPropTypesSecret.js": {
+                      "id": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    },
+                    "./node_modules/react/cjs/react.development.js": {
+                      "id": "./node_modules/react/cjs/react.development.js",
+                      "buildMeta": {
+                        "providedExports": true
+                      }
+                    }
+                  }
+                }
+              },
+              "__plugin__": "DllReferencePlugin",
+              "__lable__": "vendorDllReference"
+            }
+          ]
+        },
+        {
+          "context": "/Users/systrive/code/introduction",
+          "entry": {
+            "ant/tab/tab": "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/server-loader.js!/Users/systrive/code/introduction/app/web/page/ant/tab/tab.jsx",
+            "css/module/module": "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/server-loader.js!/Users/systrive/code/introduction/app/web/page/css/module/module.jsx",
+            "hello/component": "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/server-loader.js!/Users/systrive/code/introduction/app/web/page/hello/component.jsx",
+            "hello/element": "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/server-loader.js!/Users/systrive/code/introduction/app/web/page/hello/element.jsx",
+            "home/home": "babel-loader!/Users/systrive/code/introduction/app/web/framework/entry/server-loader.js!/Users/systrive/code/introduction/app/web/page/home/home.jsx",
+            "spa/client": "/Users/systrive/code/introduction/app/web/page/spa/client.jsx",
+            "spa/redux": "/Users/systrive/code/introduction/app/web/page/spa/redux.jsx",
+            "spa/ssr": "/Users/systrive/code/introduction/app/web/page/spa/ssr.jsx",
+            "layout": "/Users/systrive/code/introduction/app/web/framework/layout/layout.jsx"
+          },
+          "output": {
+            "libraryTarget": "commonjs",
+            "filename": "[name].js",
+            "path": "/Users/systrive/code/introduction/app/view",
+            "publicPath": "/public/"
+          },
+          "resolve": {
+            "extensions": [
+              ".js",
+              ".jsx"
+            ],
+            "alias": {
+              "asset": "/Users/systrive/code/introduction/app/web/asset",
+              "component": "/Users/systrive/code/introduction/app/web/component",
+              "framework": "/Users/systrive/code/introduction/app/web/framework",
+              "store": "/Users/systrive/code/introduction/app/web/store"
+            }
+          },
+          "externals": [
+            null
+          ],
+          "resolveLoader": {
+            "modules": [
+              "/Users/systrive/code/introduction/node_modules",
+              "/Users/systrive/code/introduction/node_modules/easywebpack/node_modules",
+              "/Users/systrive/code/introduction/node_modules/easywebpack-react/node_modules"
+            ]
+          },
+          "mode": "development",
+          "target": "node",
+          "node": {
+            "__filename": false,
+            "__dirname": false
+          },
+          "optimization": {
+            "minimize": false
+          },
+          "module": {
+            "rules": [
+              {
+                "test": {},
+                "exclude": {},
+                "use": [
+                  {
+                    "loader": "babel-loader",
+                    "options": {}
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "eslint-loader",
+                    "options": {}
+                  }
+                ],
+                "exclude": {},
+                "enforce": "pre"
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "isomorphic-style-loader"
+                  },
+                  {
+                    "loader": "css-loader",
+                    "options": {}
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  }
+                ],
+                "exclude": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  "~config~webpack~webpackConfigList~1~module~rules~2~use~0",
+                  {
+                    "loader": "css-loader",
+                    "options": {}
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  },
+                  {
+                    "loader": "less-loader",
+                    "options": {}
+                  }
+                ],
+                "exclude": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "url-loader",
+                    "options": {
+                      "limit": 1024,
+                      "name": "img/[name].[ext]"
+                    }
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "url-loader",
+                    "options": {
+                      "limit": 1024,
+                      "name": "media/[name].[ext]"
+                    }
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "url-loader",
+                    "options": {
+                      "limit": 1024,
+                      "name": "font/[name].[ext]"
+                    }
+                  }
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "isomorphic-style-loader",
+                    "options": {}
+                  },
+                  {
+                    "loader": "css-loader",
+                    "options": {
+                      "modules": true,
+                      "importLoaders": 1
+                    }
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  }
+                ],
+                "include": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              },
+              {
+                "test": {},
+                "use": [
+                  {
+                    "loader": "isomorphic-style-loader",
+                    "options": {}
+                  },
+                  {
+                    "loader": "css-loader",
+                    "options": {
+                      "modules": true,
+                      "importLoaders": 2
+                    }
+                  },
+                  {
+                    "loader": "postcss-loader",
+                    "options": {}
+                  },
+                  {
+                    "loader": "less-loader",
+                    "options": {}
+                  }
+                ],
+                "include": [
+                  "/Users/systrive/code/introduction/app/web/page/css/module"
+                ]
+              }
+            ]
+          },
+          "plugins": [
+            {
+              "definitions": {},
+              "__plugin__": "ProvidePlugin",
+              "__lable__": "provide"
+            },
+            {
+              "definitions": {
+                "process.env.NODE_ENV": "\"development\"",
+                "EASY_ENV": "\"dev\"",
+                "EASY_ENV_IS_DEV": true,
+                "EASY_ENV_IS_TEST": false,
+                "EASY_ENV_IS_PROD": false,
+                "EASY_ENV_IS_BROWSER": false,
+                "EASY_ENV_IS_NODE": true,
+                "EASY_ENV_LOCAL_PUBLIC_PATH": "\"/public/\"",
+                "EASY_ENV_PUBLIC_PATH": "\"/public/\"",
+                "EASY_ENV_HOST_URL": "\"http://192.168.1.25:9000\""
+              },
+              "__plugin__": "DefinePlugin",
+              "__lable__": "define"
+            },
+            {
+              "__plugin__": "progress-bar-webpack-plugin",
+              "__lable__": "progress"
+            }
+          ]
+        }
+      ]
+    },
+    "webpackreact": {},
+    "env": "local",
     "name": "introduction",
     "keys": "<String len: 6>",
     "proxy": false,
@@ -160,88 +945,87 @@
     "hostHeaders": "",
     "pkg": {
       "name": "introduction",
-      "version": "1.0.0",
-      "description": "",
+      "version": "4.0.1",
+      "description": "project for boowin",
       "scripts": {
-        "clean": "easy clean",
-        "debug": "egg-bin debug",
-        "build": "cross-env easy clean && easy build prod",
-        "build:dev": "cross-env easy clean && easy build dev",
-        "build:test": "cross-env easy clean && easy build test",
-        "build:prod": "cross-env easy clean && easy build prod",
+        "postinstall": "node ./script/postinstall.js",
+        "build": "cross-env easywebpack build prod",
+        "build:test": "cross-env easywebpack build test",
+        "build:prod": "cross-env easywebpack build prod",
         "dev": "cross-env WORKERS=1 node index.js",
         "start": "cross-env EGG_SERVER_ENV=prod NODE_ENV=production pm2 start index.js",
-        "start:test": "cross-env EGG_SERVER_ENV=test node index.js",
-        "start:prod": "cross-env EGG_SERVER_ENV=prod NODE_ENV=production npm start",
+        "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
         "lint": "eslint .",
         "fix": "eslint --fix .",
         "ii": "npm install --registry https://registry.npm.taobao.org"
       },
       "dependencies": {
-        "axios": "^0.17.1",
         "cross-env": "^5.0.0",
         "egg": "^2.1.0",
-        "egg-bin": "^4.3.7",
         "egg-cors": "^2.0.0",
         "egg-logger": "^1.5.0",
         "egg-validate": "^1.0.0",
-        "egg-view-vue-ssr": "^3.0.2",
-        "element-ui": "^2.0.8",
+        "egg-view-react-ssr": "^2.1.0",
         "extend": "\\x7e3.0.0",
-        "iview": "^2.14.0-rc.1",
+        "history": "^4.7.2",
         "lodash": "^4.17.4",
-        "mint-ui": "^2.2.9",
         "mockjs": "^1.0.1-beta3",
         "moment": "^2.17.1",
-        "vue": "^2.5.0",
-        "vue-hot-reload-api": "^2.1.0",
-        "vue-router": "^3.0.1",
-        "vuex": "^3.0.1",
-        "vuex-router-sync": "^5.0.0"
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "react-router": "^4.2.0",
+        "react-router-config": "^1.0.0-beta.4",
+        "react-redux": "^5.0.6",
+        "react-router-dom": "^4.2.2",
+        "react-router-redux": "^4.0.8",
+        "redux": "^3.7.2"
       },
       "devDependencies": {
+        "antd": "^3.0.3",
         "autod-egg": "^1.0.0",
         "autoprefixer": "^7.1.4",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
         "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-import": "^1.4.0",
         "babel-plugin-syntax-dynamic-import": "^6.18.0",
         "babel-plugin-transform-object-assign": "^6.22.0",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
-        "babel-plugin-transform-runtime": "^6.15.0",
         "babel-preset-env": "^1.6.0",
-        "easywebpack-cli": "^3.5.2",
-        "easywebpack-vue": "^4.0.0",
-        "egg-logview": "^1.0.0",
-        "egg-webpack": "^4.0.0",
-        "egg-webpack-vue": "^2.0.0",
-        "eslint": "^4.3.0",
-        "eslint-config-egg": "^5.0.0",
-        "eslint-plugin-vue": "^2.0.1",
+        "babel-preset-react": "^6.24.1",
+        "easywebpack-cli": "^3.8.0",
+        "easywebpack-react": "^4.0.0",
+        "egg-webpack": "^4.0.1",
+        "egg-webpack-react": "^2.0.2",
+        "eslint-config-egg": "^5.1.1",
+        "eslint-plugin-react": "^7.1.0",
         "imagemin-webpack-plugin": "^1.5.2",
         "ip": "^1.1.5",
-        "iview-loader": "^1.1.0",
-        "less": "^2.7.2",
-        "less-loader": "^4.0.5",
-        "node-sass": "^4.5.3",
+        "less": "^2.7.3",
+        "less-loader": "^4.1.0",
+        "node-sass": "^4.6.0",
+        "postcss-loader": "^2.0.8",
         "sass-loader": "^6.0.6",
-        "uglifyjs-webpack-plugin": "^1.1.2",
-        "vconsole": "^3.0.0"
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.1"
       },
       "engines": {
         "node": ">=6.0.0"
       },
       "ci": {
-        "version": "6, 7, 8, 9"
+        "version": "6, 8, 9"
       },
       "repository": {
         "type": "git",
-        "url": ""
+        "url": "git+https://github.com/hubcarl/egg-react-webpack-boilerplate.git"
       },
-      "author": "systrive@163.com",
-      "license": "MIT"
+      "author": "hubcarl@126.com",
+      "license": "MIT",
+      "homepage": "https://github.com/hubcarl/egg-react-webpack-boilerplate"
     },
-    "baseDir": "/Users/systrive/Desktop/systrive/introduction",
+    "baseDir": "/Users/systrive/code/introduction",
     "HOME": "/Users/systrive",
-    "rundir": "/Users/systrive/Desktop/systrive/introduction/run",
+    "rundir": "/Users/systrive/code/introduction/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -271,20 +1055,22 @@
       }
     },
     "logger": {
-      "dir": "/Users/systrive/Desktop/systrive/introduction/logs",
+      "dir": "/Users/systrive/code/introduction/logs",
       "encoding": "utf8",
-      "env": "prod",
+      "env": "local",
       "level": "INFO",
       "consoleLevel": "DEBUG",
-      "disableConsoleAfterReady": true,
+      "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "introduction-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {},
-      "allowDebugAtProd": true,
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
       "type": "agent"
     },
     "httpclient": {
@@ -346,8 +1132,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-session",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -359,8 +1145,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-security",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-security",
       "version": "2.2.2"
     },
     "jsonp": {
@@ -372,8 +1158,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-jsonp",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -385,9 +1171,9 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-onerror",
-      "version": "2.0.0"
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-onerror",
+      "version": "2.1.0"
     },
     "i18n": {
       "enable": true,
@@ -396,8 +1182,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-i18n",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-i18n",
       "version": "2.0.0"
     },
     "watcher": {
@@ -407,8 +1193,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-watcher",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-watcher",
       "version": "3.0.0"
     },
     "multipart": {
@@ -418,9 +1204,24 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-multipart",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-multipart",
       "version": "2.0.0"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-development",
+      "version": "2.3.1"
     },
     "schedule": {
       "enable": true,
@@ -429,8 +1230,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-schedule",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-schedule",
       "version": "3.3.0"
     },
     "logrotator": {
@@ -442,8 +1243,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-logrotator",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-logrotator",
       "version": "3.0.3"
     },
     "static": {
@@ -453,8 +1254,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-static",
+      "from": "/Users/systrive/code/introduction/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-static",
       "version": "2.1.1"
     },
     "view": {
@@ -464,20 +1265,57 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view",
+      "from": "/Users/systrive/code/introduction/node_modules/egg/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-view",
       "version": "2.1.0"
     },
-    "vuessr": {
+    "reactssr": {
       "enable": true,
-      "package": "egg-view-vue-ssr",
-      "name": "vuessr",
+      "package": "egg-view-react-ssr",
+      "name": "reactssr",
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/systrive/Desktop/systrive/introduction/config/plugin.js",
-      "path": "/Users/systrive/Desktop/systrive/introduction/node_modules/egg-view-vue-ssr",
-      "version": "3.0.8"
+      "from": "/Users/systrive/code/introduction/config/plugin.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-view-react-ssr",
+      "version": "2.2.5"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/systrive/code/introduction/config/plugin.local.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-cors",
+      "version": "2.0.0"
+    },
+    "webpack": {
+      "enable": true,
+      "package": "egg-webpack",
+      "name": "webpack",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/systrive/code/introduction/config/plugin.local.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-webpack",
+      "version": "4.1.2"
+    },
+    "webpackreact": {
+      "enable": true,
+      "package": "egg-webpack-react",
+      "name": "webpackreact",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/systrive/code/introduction/config/plugin.local.js",
+      "path": "/Users/systrive/code/introduction/node_modules/egg-webpack-react",
+      "version": "2.0.2"
     }
   }
 }

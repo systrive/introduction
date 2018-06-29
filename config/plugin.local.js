@@ -8,12 +8,7 @@ exports.webpack = {
   package: 'egg-webpack'
 };
 
-exports.webpackvue = {
+exports.webpackreact = {
   enable: true,
-  package: 'egg-webpack-vue'
-};
-
-exports.logview = {
-  package: 'egg-logview',
-  env: ['local']
+  package: 'egg-webpack-react'
 };
