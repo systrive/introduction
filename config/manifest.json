@@ -1,20 +1,20 @@
 {
   "layout.js": "/public/js/layout.b2243dd6.js",
-  "spa/ssr.js": "/public/js/spa/ssr.b449ff17.js",
+  "spa/ssr.js": "/public/js/spa/ssr.034e1033.js",
   "spa/ssr.css": "/public/css/spa/ssr.98945f4c.css",
-  "spa/redux.js": "/public/js/spa/redux.d934aae5.js",
+  "spa/redux.js": "/public/js/spa/redux.1901ef46.js",
   "spa/redux.css": "/public/css/spa/redux.98945f4c.css",
-  "spa/client.js": "/public/js/spa/client.c0fb7c1a.js",
+  "spa/client.js": "/public/js/spa/client.e82eaa57.js",
   "spa/client.css": "/public/css/spa/client.85b2a6d0.css",
-  "home/home.js": "/public/js/home/home.6b7d0969.js",
-  "home/home.css": "/public/css/home/home.5475f033.css",
-  "hello/element.js": "/public/js/hello/element.e0fe1074.js",
+  "home/home.js": "/public/js/home/home.5c479cd9.js",
+  "home/home.css": "/public/css/home/home.bbeca004.css",
+  "hello/element.js": "/public/js/hello/element.a1631ca4.js",
   "hello/element.css": "/public/css/hello/element.85b2a6d0.css",
-  "hello/component.js": "/public/js/hello/component.6d1f6b33.js",
+  "hello/component.js": "/public/js/hello/component.49206f00.js",
   "hello/component.css": "/public/css/hello/component.85b2a6d0.css",
-  "css/module/module.js": "/public/js/css/module/module.1d7626d3.js",
+  "css/module/module.js": "/public/js/css/module/module.f648a6c2.js",
   "css/module/module.css": "/public/css/css/module/module.1fdbd752.css",
-  "ant/tab/tab.js": "/public/js/ant/tab/tab.32ee8939.js",
+  "ant/tab/tab.js": "/public/js/ant/tab/tab.40a14aaa.js",
   "ant/tab/tab.css": "/public/css/ant/tab/tab.85883df4.css",
   "js/vendor.4cc09fed.js": "/public/js/vendor.4cc09fed.js",
   "img/market-survey.png": "/public/img/market-survey.12856f48.png",
@@ -31,7 +31,7 @@
     "ant/tab/tab.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/ant/tab/tab.32ee8939.js"
+        "/public/js/ant/tab/tab.40a14aaa.js"
       ],
       "css": [
         "/public/css/ant/tab/tab.85883df4.css"
@@ -40,7 +40,7 @@
     "css/module/module.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/css/module/module.1d7626d3.js"
+        "/public/js/css/module/module.f648a6c2.js"
       ],
       "css": [
         "/public/css/css/module/module.1fdbd752.css"
@@ -49,7 +49,7 @@
     "hello/component.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/hello/component.6d1f6b33.js"
+        "/public/js/hello/component.49206f00.js"
       ],
       "css": [
         "/public/css/hello/component.85b2a6d0.css"
@@ -58,7 +58,7 @@
     "hello/element.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/hello/element.e0fe1074.js"
+        "/public/js/hello/element.a1631ca4.js"
       ],
       "css": [
         "/public/css/hello/element.85b2a6d0.css"
@@ -67,16 +67,16 @@
     "home/home.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/home/home.6b7d0969.js"
+        "/public/js/home/home.5c479cd9.js"
       ],
       "css": [
-        "/public/css/home/home.5475f033.css"
+        "/public/css/home/home.bbeca004.css"
       ]
     },
     "spa/client.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/spa/client.c0fb7c1a.js"
+        "/public/js/spa/client.e82eaa57.js"
       ],
       "css": [
         "/public/css/spa/client.85b2a6d0.css"
@@ -85,7 +85,7 @@
     "spa/redux.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/spa/redux.d934aae5.js"
+        "/public/js/spa/redux.1901ef46.js"
       ],
       "css": [
         "/public/css/spa/redux.98945f4c.css"
@@ -94,7 +94,7 @@
     "spa/ssr.js": {
       "js": [
         "/public/js/vendor.4cc09fed.js",
-        "/public/js/spa/ssr.b449ff17.js"
+        "/public/js/spa/ssr.034e1033.js"
       ],
       "css": [
         "/public/css/spa/ssr.98945f4c.css"

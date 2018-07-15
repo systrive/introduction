@@ -12,7 +12,6 @@ export default class Header extends Component {
             current: 'home'
         }
         this.handleClick = (e) => {
-            console.log('click ', e);
             this.setState({
                 current: e.key
             });
@@ -22,8 +21,9 @@ export default class Header extends Component {
                 collapsed: !this.state.collapsed
             });
         }
-        this.appSelect = () => {
+        this.appSelect = (e) => {
             this.setState({
+                current: e.key,
                 collapsed: !this.state.collapsed
             });
         }
