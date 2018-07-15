@@ -28,15 +28,46 @@ export default class Header extends Component {
                             <div className="logo-content">Goldminer Consult Co., Ltd</div>
                     </div>
                     <div className="contact-content">
-                        Add:  No. 8 SIYOU Street, YUEXIU District, GUANGZHOU, China
-                        <br />
-                        Tel:  XXX
-                        <br />
-                        Fax: XXX
-                        <br />
-                        Web: www.goldminer-intl.com
-                        <br />
-                        Email: info@goldminer-intl.com
+                        <div>
+                            <span className="title">
+                                Add:&nbsp;
+                            </span>
+                            <span className="detail">
+                                No. 8 SIYOU Street, YUEXIU District, GUANGZHOU, China
+                            </span>
+                        </div>
+                        <div>
+                            <span className="title">
+                                Tel:&nbsp;
+                            </span>
+                            <span className="detail">
+                                XXX
+                            </span>
+                        </div>
+                        <div>
+                            <span className="title">
+                                FAX:&nbsp;
+                            </span>
+                            <span className="detail">
+                                XXX
+                            </span>
+                        </div>
+                        <div>
+                            <span className="title">
+                                Web:&nbsp;
+                            </span>
+                            <span className="detail">
+                                www.goldminer-intl.com
+                            </span>
+                        </div>
+                        <div>
+                            <span className="title">
+                                Email:&nbsp;
+                            </span>
+                            <span className="detail">
+                                info@goldminer-intl.com
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

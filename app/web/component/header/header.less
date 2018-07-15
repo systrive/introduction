@@ -11,3 +11,40 @@
         text-align: right;
     }
 }
+.app-header {
+    display: none;
+    line-height: 50px;
+    text-align: center;
+    .logo-text {
+        font-size: 20px;
+        display: inline-block;
+        width: 50%;
+    }
+    .menu-icon {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+    }
+    .ant-menu {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 100;
+        &.ant-menu-inline-collapsed {
+            width: 0;
+            .ant-menu-item {
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+        .pc-header {
+            display: none;
+        }
+        .app-header {
+            display: block;
+        }
+  }
+  

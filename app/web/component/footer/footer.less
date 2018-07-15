@@ -2,13 +2,13 @@
     padding: 0 80px;
     background: #aaa;
     .menu {
-        margin: 0 100px;
         padding: 10px 0;
         color: #fff;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         div {
-            flex: 1;
-            text-align: center;
+            margin-right: 10px;
         }
     }
     .ant-divider-horizontal {
@@ -17,10 +17,11 @@
     .contact {
         padding: 15px 30px;
         display: flex;
-        flex-flow: row;
+        flex-wrap: wrap;
         color: #fff;
         .logo-info {
-            flex: 0.7;
+            width: 320px;
+            margin-right: 20px;
             text-align: center;
         }
         .logo-content {
@@ -28,7 +29,31 @@
         }
         .contact-content {
             white-space: nowrap;
-            flex: 1;
+            width: 410px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer-container {
+        padding: 0 40px;
+        .contact {
+            padding: 15px 0 0 0;
+            .logo-info {
+                margin: 0;
+            }
+            .logo-img {
+                img {
+                    max-width: 100%;
+                }
+            }
+            .contact-content {
+                max-width: 100%;
+                white-space: normal;
+                div {
+                    display: flex;
+                }
+            }
         }
     }
 }

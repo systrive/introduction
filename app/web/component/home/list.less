@@ -23,7 +23,8 @@
 .list-container {
     margin-top: 30px;
     .devider-item {
-        padding: 0 200px;
+        width: 70%;
+        margin: 0 auto;
         &.service-devider {
             margin-bottom: 0;
         }
@@ -71,9 +72,10 @@
     }
     // industry
     .tab-container {
-        margin: 0 150px;
         display: flex;
         flex-flow: row;
+        width: 80%;
+        margin: 0 auto;
         .ant-tabs-content {
             flex: 1;
             background-image: url('./img/industry.png');
@@ -83,7 +85,6 @@
     }
     // about us
     .about-us-content {
-        // margin: 0 150px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -100,4 +101,25 @@
 }
 .ant-back-top {
     bottom: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    .list-container {
+        .more {
+            margin: 0 50px 10px 0;
+        }
+        .about-us-content {
+            .content {
+                margin: 20px 0 0 0 !important;
+                width: 80%;
+            }
+            .img {
+                display: inline-block;
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
